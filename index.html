@@ -1,17 +1,45 @@
-<!doctype html>
+<!DOCTYPE html> 
+<html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>The Journey</title>
-        <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     </head>
     <body>
-        <div class="center-panel">
-            <div class="title">Latest APK debug</div>
-            <div class="download-space">
-                <a class="download" href="https://onedrive.live.com/download?cid=31F56FD2D9F89820&resid=31F56FD2D9F89820%21936&authkey=ANfeu1l0Nckp5cE">chew-app-latest.apk</a>
+        <div data-role="page" id="home">
+            <div data-role="header">
+                <h1>Debug stage</h1>
+            </div>
+        
+            <div data-role="content">	
+                <ul data-role="listview" data-ajax="false" data-inset="true" data-theme="a">
+                    <li data-role="list-divider">Select project</li>
+                    <li><a href="#chewapp">ChewApp</a></li>
+                    <li><a href="#">...</a></li>
+                </ul>
+             </div>
+
+             <div data-role="footer" data-position="fixed">
+                <h2>All right reserved.</h2>
+            </div>
+        </div>
+
+        <div data-role="page" id="chewapp"  >
+            <div data-role="header">
+                <a data-role="button" data-rel="back">Back</a>
+                <h1>ChewApp</h1>
+            </div>
+        
+            <div data-role="content">	
+                    <div ><a href="#anylink" class="ui-btn">Download latest Chewapp.apk</a></div>
+             </div>
+
+             <div data-role="footer" data-position="fixed">
+                <h2>All right reserved.</h2>
             </div>
         </div>
     </body>
